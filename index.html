@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+</head>
+<body>
+    <div id="app"></div>
+    <form id="task-form">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="description" placeholder="Description" required>
+        <select id="status">
+            <option value="Open">Open</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Closed">Closed</option>
+
+        </select>
+        <input type="datetime-local" id="dueDate" required>
+        <button type="submit">Add Task</button>
+    </form>
+    <div id="pagination"></div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
